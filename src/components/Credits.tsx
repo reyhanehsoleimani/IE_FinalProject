@@ -5,7 +5,7 @@ import React from "react";
 import styled from "styled-components";
 
 export const Credits = () => {
-    return <Container>Made with 💓 by <a href="https://github.com/Hesamsrk">Hesamsrk</a></Container>
+    return <Container></Container>
 }
 
 const Container = styled.div`

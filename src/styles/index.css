@@ -1,0 +1,88 @@
+@import "./reset.css";
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    --scrollbarBG: #272727;
+    --thumbBG: #326ab3;
+}
+body::-webkit-scrollbar {
+    width: 11px;
+}
+body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 10px;
+    border: 5px solid var(--scrollbarBG);
+}
+
+/*
+ To make HTML and body fit the screen
+*/
+#root {
+    min-height: 100%;
+}
+
+/* fallback for IE 6 */
+* html #root {
+    height: 100%;
+}
+
+
+/*
+ To make HTML and body fit the screen
+*/
+body, p {
+    margin: 0;
+    padding: 0
+}
+
+#root {
+    /*Basic settings and fonts*/
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /*To make #Container centre positioned*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*Fallback for background image*/
+    background: rgb(103, 50, 99);
+    background: linear-gradient(89deg, rgb(71, 37, 78) 0%, rgb(36, 36, 36) 100%);
+    /*Background image*/
+    /*To make background image cover the screen*/
+    background-image: url("../../assets/background.gif");
+    background-size: cover;
+    background-position: center;
+    /* To display background image correctly under glass effect of #container*/
+    background-attachment: fixed;
+    /*Set default font color*/
+    color: rgb(255, 255, 255);
+    /*
+    To prevent overflow and scrollbar appearance
+    */
+    overflow: hidden;
+}
